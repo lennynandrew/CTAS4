@@ -1,0 +1,96 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background: url("header-wallpaper.jpeg") center/cover fixed no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgba(0,0,0,0.35); /* medium contrast */
+}
+
+/* NAVIGATION */
+.navbar {
+  background: rgba(0,0,0,0.85);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #c9d6ff;
+}
+
+/* HERO HEADER */
+.hero {
+  position: relative;
+  height: 380px;
+  background: url("header-wallpaper.jpeg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-logo {
+  width: 160px;
+  z-index: 2;
+  margin-bottom: 15px;
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 2;
+}
+
+/* CONTENT */
+.content {
+  padding: 40px 20px;
+  background: rgba(255,255,255,0.85);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  margin-top: 40px;
+}
